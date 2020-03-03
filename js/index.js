@@ -1,7 +1,5 @@
 
-        google.charts.load('current', {'packages':["geochart","line", "corechart"],
-        'mapsApiKey':"AIzaSyAAT9BsgJnnnboA56HU_vpW-UnNlYBfK4E" 
-        });
+        google.charts.load('current', {'packages':["geochart","line", "corechart"]});
         google.charts.setOnLoadCallback(drawAllSheets);
 
         function drawAllSheets() {
