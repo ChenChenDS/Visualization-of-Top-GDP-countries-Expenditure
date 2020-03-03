@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style2.css" title="style" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Visualization on Top GDP countries(Prediction)</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <h1><a href="index.html">Visualization </a></h1>
+                    <h2>Military | Healthcare | Education
+                        <div>Expenditure for Top GDP countries</div>
+                    </h2>
+                </div>
+                <!-- logo_text -->
+            </div>
+            <!-- logo -->
+
+            <div id="menubar">
+                <ul id="menu">
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="overview.html">Overview</a></li>
+                    <li ><a href="military.html">Military</a></li>
+                    <li ><a href="healthcare.html">Healthcare</a></li>
+                    <li ><a href="education.html">Education</a></li>
+                    <li class="selected"><a href="prediction.html">Prediction & Summary</a></li>
+                </ul>
+                <!-- menu -->
+            </div>
+            <!-- menubar -->
+        </div>
+        <!-- header -->
+        <div id="content">
+            <h1>Prediction of Spendings</h1>
+            &nbsp;           
+            <h2>Time series prediction of the 10 countires total spendings</h2>
+            <div id="prediction_div" style="width:1500px; height:600px"></div>
+            <h4>
+                We made a time series plot here to predict the spendings after the year 2016.
+                The Dollar amount is calculated by summing up all the ten countries' data.
+                <div>*The prediction method is Holt's additive damped trend prediction</div>
+                <li>Healthcare Spendings will continues to grow</li>
+                <li>Education and military spendings will stay at the current level</li>
+            </h4>
+            &nbsp;
+            <h1>Summary</h1>
+            <h3>
+                <li>Healthcare burns a significant fraction of government spendings.</li>
+                <li>The United State's military, healthcare and education spending dominates other countries in both total value and per capita value.</li>
+                <li>Most developed countries focus on their spending on healthcare and education.</li>
+                <li>Japan's spending on military, healthcare and education all experience decreasing. </li>
+                <li>Developing countries like China and India focus their spending on military but are paying more attention to healthcare and education.</li>  
+                <li>China and India are fast growing countries, but it will take time for the per capita figures to catch up with those of other countries</li>      
+            </h3>
+            &nbsp;
+            &nbsp;
+            <script src="js/prediction.js"></script>
+            <!--Google API-->
+        </div>
+        <!-- content -->   
+        <div id="contact">
+            <div class="left">
+                <h3>Contact us</h3>
+                &nbsp;
+                <h4> Author: Chen Chen
+                    <div><a href="mailto:cicichen0407@gwu.edu">cicichen0407@gwu.edu</a></div>
+                    <div>Github:<a href=https://github.com/ChenChenDS target="_blank">www.github.com/ChenChenDS</a></div>
+                    <div>Linkedin:<a href=https://www.linkedin.com/in/chenchends target="_blank">www.linkedin.com/in/chenchends</a></div>
+                </h4>
+            </div>
+            <div class="right">
+                <h4>George Washington University
+                <div>Data Science Program</div>
+                <div>Washington D.C.</div>
+                &nbsp;
+                <div>Instructor: Nima Zahadat, Ph.D.</div>
+                </h4>    
+            </div>
+        </div>
+        <div id="footer">
+            <p> Copyright &copy;
+            <script>
+                var d = new Date();
+                document.write(d.getFullYear());
+            </script>
+            | HTML5 | CSS3 | CC</p>
+        </div>
+        <!-- footer -->
+    </div>
+    <!-- main -->
+</body>
+
+</html>
