@@ -12,7 +12,7 @@ HTML JavaScript Python
 ### Tools
 Google API
 
-### Visualization link: 
+### Publish link: 
 https://chenchends.github.io/Visualization-of-Top-GDP-countries-Expenditure/
 
 ### Author: Chen Chen
