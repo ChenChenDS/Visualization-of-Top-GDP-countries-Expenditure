@@ -1,0 +1,285 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 0.78em arial, sans-serif;
+    background: #444;
+    color: #555;
+}
+
+p {
+    padding: 15px 10px 16px 10px;
+    line-height: 1.7em;
+}
+
+img {
+	border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: normal 200% 'century gothic', arial, sans-serif;
+    color: #111;
+    margin: 15px 0 0px 0;
+    padding: 15px 0 5px 0;
+}
+
+h2 {
+    color: #444;
+}
+
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font: normal 120% arial, sans-serif;
+    color: #555;
+}
+
+h5,
+h6 {
+    font: italic 95% arial, sans-serif;
+    padding: 0 0 15px 0;
+    color: #000;
+}
+
+h6 {
+    color: #888;
+}
+
+a,
+a:hover {
+    outline: none;
+    color: #111;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 2px 0 22px 17px;
+}
+
+ul li {
+    list-style-type: circle;
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+}
+
+#main,
+#header,
+#logo,
+#menubar,
+#content,
+#contact,
+#footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    width: 1100px;
+    background-color:#e6f2ff;
+}
+
+#header {
+    width: 1100px;
+    background-color: rgba(57, 96, 226, 0.349);
+}
+
+#logo {
+    width: 1100px;
+    position: relative;
+    height: 300px;
+    background: url(../images/TitleBack.PNG) no-repeat;
+    background-size: 100% 100%;
+}
+
+#logo_text {
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+
+#logo h1,
+#logo h2 {
+    font: normal 250% 'century gothic', arial, sans-serif;
+    border-bottom: 0;
+    text-transform: none;
+    margin: 0;
+}
+
+#logo_text h1,
+#logo_text h1 a,
+#logo_text h1 a:hover {
+    padding: 10px 0 0 0;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: rgb(230, 224, 224);
+}
+
+#logo_text h2 {
+    font-size: 250%;
+    padding: 10px 0 10px 0;
+    color: rgb(230, 224, 224);
+}
+
+#menubar {
+    width: 100%;
+    height: 35px;
+	padding:8px 0 0 0;
+	margin: -5px 0 0 0;
+    position: relative;
+    z-index: 1;
+    float: right;
+    background: url(../images/menu.PNG) no-repeat;
+}
+
+ul#menu {
+    float: right;
+    margin: 0 30px 0 0;
+}
+
+#menu li {
+    float: left;
+	margin: 5px 0 0 0;
+	padding: 0 0 0 6px;
+    list-style: none;
+}
+
+#menu li a {
+    letter-spacing: 0em;
+    font: normal 125% arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 10px 0px 10px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+ul#menu li.selected a {
+    color: #111;
+    padding: 0px 10px 0px 10px;
+}
+
+ul#menu li.selected {
+    background: #f8f8f8;
+    padding: 10px 10px 10px 10px;
+	margin: 0;
+}
+
+
+ul#menu li a:hover {
+    color: #888;
+}
+
+#content {
+    text-align: center;
+    width: 98%;
+    height: 100%;
+    background: #f8f8f8;
+}
+
+#content h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 80px 20px 20px 20px;
+}
+
+#content h2{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#content h4{
+    text-align: justify;
+    font-size: medium;
+    padding: 0 80px 0 80px;
+}
+
+#content h3{
+    text-align: justify;
+    font-size: large;
+    padding: 0 100px 50px 100px;
+    list-style-position: inside;
+    text-indent: -1.5em;
+}
+
+#contact {
+    width: 98%;
+    height: 200px;
+}
+
+.left{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 20px 0 4px 0;
+    text-align: left;
+    background:#99ccff;
+    color:black;
+    letter-spacing: 0.2em;
+}
+
+.left h3{
+    text-align: left;
+    font: normal 80%, arial, sans-serif;
+    letter-spacing: 0;
+    padding: 0 0 0 50px;
+    color:black;
+}
+
+.left h4{
+    text-align: left;
+    padding: 0 0 0 100px;
+    line-height: 1.5em;
+    color:black;
+}
+
+.right{
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 20px 0 4px 0;
+    background:#99ccff;
+    color:black;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+}
+
+.right h4{
+    text-align: center;
+    padding: 45px 10px 0 40px;
+    line-height: 1.5em;
+    color:black;
+}
+
+#footer {
+    width: 98%;
+    height: 33px;
+    padding: 20px 0 4px 0;
+    text-align: center;
+    background:#6699ff;
+    color:black;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 80%;
+}
