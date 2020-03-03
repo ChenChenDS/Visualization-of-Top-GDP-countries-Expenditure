@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style1.css" title="style" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Visualization on Top GDP countries(Home)</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <h1><a href="index.html">Visualization </a></h1>
+                    <h2>Military | Healthcare | Education
+                        <div>Expenditure for Top GDP countries</div>
+                    </h2>
+                </div>
+                <!-- logo_text -->
+            </div>
+            <!-- logo -->
+
+            <div id="menubar">
+                <ul id="menu">
+                    <li class="selected"><a href="index.html">Home</a></li>
+                    <li ><a href="overview.html">Overview</a></li>
+                    <li ><a href="military.html">Military</a></li>
+                    <li ><a href="healthcare.html">Healthcare</a></li>
+                    <li ><a href="education.html">Education</a></li>
+                    <li ><a href="prediction.html">Prediction & Summary</a></li>
+                </ul>
+                <!-- menu -->
+            </div>
+            <!-- menubar -->
+        </div>
+        <!-- header -->
+
+        <div id="site_content">
+            <div class="sidebar">
+                <div class="scrollingBox">
+                    <script src="js/scrollingbox.js">
+                    </script>
+                    <ul class="local">
+                        <li><a href="#header">Back to Top</a></li>
+                        <li><a href="#pic1">Consist of GDP</a></li>
+                        <li><a href="#pic2">Spending Compare to GDP</a></li>
+                    </ul>
+                    &nbsp;  
+                    <h4>Useful Source</h4>
+                    <ul class="outer">
+                        <li><a href="https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS" target="_blank">World Bank Data(Military)</a></li>
+                        <li><a href="https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS" target="_blank">World Bank Data(Healthcare)</a></li>
+                        <li><a href="https://data.worldbank.org/indicator/NY.ADJ.AEDU.CD" target="_blank">World Bank Data(Education)</a></li>
+                        <li><a href="https://www.imf.org/external/datamapper/NGDP_RPCH@WEO/OEMDC/ADVEC/WEOWORLD" target="_blank">International Monetary Fund(IMF)</a></li>
+                        <li><a href="https://developers.google.com/chart/interactive/docs" target="_blank">Google Gallery</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sidebar -->
+
+            <div id="content">
+                <h1>Introducation</h1>
+                &nbsp;
+                    <h4>
+                        Gross Domestic Product (GDP) is the total monetary or market value of all 
+                        the finished goods and services produced within a country's borders in a 
+                        specific time period. As a broad measure of overall domestic production, 
+                        it functions as a comprehensive scorecard of the country’s economic health.
+                        (Source: Investopedia)
+                    </h4>
+                    <h6>
+                        Reference:  JIM CHAPPELOW, "Gross Domestic Product—GDP". www.investopedia.com. Retrieved 2019-06-27.
+                    </h6>
+                
+                    <h2 id="pic1">Consists of GDP</h2>
+                    <div id="GDP_tree" style="width:800px; height:300px"></div>
+                    &nbsp;
+                    <h4>
+                        GDP consists of Government Spending, Net Exports, Personal Consumption, 
+                        and Business Investment. Education, Healthcare, Defense spendings 
+                        are the three main areas where the government spends money on. So here, 
+                        we will analyze these three spendings by comparing GDP, per capita data, 
+                        and growth rate.      
+                    </h4>
+                    &nbsp;                
+                    <h2 id="pic2">The GDP spread (2019)</h2>
+                    &nbsp;
+                    <h4>
+                        To do the analysis, we select the top 10 GDP countries in the year 2019. 
+                        They are United States, China, Germany, Japan, India, United Kingdom, 
+                        France, Italy, Brazil, Canada. All these countries are in the G20. 
+                    </h4>
+                    <div id="GDP_div" style="width:700px; height:400px;"></div>
+                    &nbsp;
+                <script src="js/index.js"></script>
+                <!--Google API-->
+            </div>
+            <!-- content -->
+        </div>
+        <!-- site_content -->
+        <div id="contact">
+            <div class="left">
+                <h3>Contact us</h3>
+                &nbsp;
+                <h4> Author: Chen Chen
+                    <div><a href="mailto:cicichen0407@gwu.edu">cicichen0407@gwu.edu</a></div>
+                    <div>Github:<a href=https://github.com/ChenChenDS target="_blank">www.github.com/ChenChenDS</a></div>
+                    <div>Linkedin:<a href=https://www.linkedin.com/in/chenchends target="_blank">www.linkedin.com/in/chenchends</a></div>
+                </h4>
+            </div>
+            <div class="right">
+                <h4>George Washington University
+                <div>Data Science Program</div>
+                <div>Washington D.C.</div>
+                &nbsp;
+                <div>Instructor: Nima Zahadat, Ph.D.</div>
+                </h4>    
+            </div>
+        </div>
+        <div id="footer">
+            <p> Copyright &copy;
+            <script>
+                var d = new Date();
+                document.write(d.getFullYear());
+            </script>
+            | HTML5 | CSS3 | CC</p>
+        </div>
+        <!-- footer -->
+    </div>
+    <!-- main -->
+</body>
+
+</html>
